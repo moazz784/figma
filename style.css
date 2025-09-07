@@ -9,7 +9,6 @@
 
 body {
   font-family: 'Manrope', sans-serif;
-  background-color: #0E0E0E;
 }
 
 .hero {
@@ -17,6 +16,7 @@ body {
   min-height: 100vh;
   overflow: hidden;
   position: relative;
+  background-color: #0E0E0E;
 }
 
 .container {
@@ -25,7 +25,6 @@ body {
   padding: 0 20px;
 }
 
-/* ===== Header ===== */
 header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +48,9 @@ nav a {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-
+nav a:hover{
+    color: #D87D4A;
+}
 .icon i {
   color: white;
   font-size: 25px;
@@ -63,8 +64,6 @@ nav a {
 .line {
   border: 0.5px solid white;
 }
-
-/* ===== Main Section ===== */
 .main {
   display: flex;
   justify-content: space-between;
@@ -76,8 +75,6 @@ nav a {
   margin: auto;
   z-index: 1;
 }
-
-/* ===== Left Content ===== */
 .left {
   flex: 1;
   z-index: 2;
@@ -123,8 +120,6 @@ nav a {
   text-transform: uppercase;
   cursor: pointer;
 }
-
-/* ===== Right Image ===== */
 .right {
   flex: 1;
   z-index: 1;
@@ -138,8 +133,6 @@ nav a {
   object-fit: contain;
   display: block;
 }
-
-/* ===== Responsive ===== */
 @media screen and (max-width: 767px) {
   nav {
     display: none;
@@ -153,8 +146,6 @@ nav a {
   header h2 {
     font-size: 20px;
   }
-
-  /* Stack content vertically */
   .main {
     flex-direction: column;
     align-items: center;
@@ -162,8 +153,6 @@ nav a {
     padding: 40px 10px;
     position: relative;
   }
-
-  /* Make image a background behind text */
   .right {
     position: absolute;
     top: 0;
@@ -200,7 +189,106 @@ nav a {
     width: 140px;
     height: 44px;
   }
-  .line{
+  
+}
+.category-section {
+  width: 100%;
+  background-color:white; 
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  overflow-y: hidden;
+}
 
+.category-section .container {
+  width: 90%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.category-card {
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  width: 350px;
+  height: 284px;
+  position: relative;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.category-card img {
+  width: 142px;
+  height: 142px;
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.category-card h2 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1.29px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-top: 50px;
+}
+
+.shop-link {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.shop-link span {
+  color: #D87D4A;
+  font-weight: bold;
+  margin-left: 5px;
+}
+@media (max-width: 767px) {
+  .category-section {
+    padding: 40px 0;
+  }
+
+  .category-section .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-card {
+    width: 90%;
+    max-width: 350px;
+    margin-bottom: 30px;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+
+  .category-card img {
+    width: 120px;
+    height: 120px;
+    top: -60px;
+  }
+
+  .category-card h2 {
+    font-size: 16px;
+  }
+
+  .shop-link {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .category-section {
+    padding: 90px 0;
+    margin-bottom: 80px; 
+  }
+  .category-section .container{
+    gap: 50px;
   }
 }
