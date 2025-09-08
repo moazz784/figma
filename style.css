@@ -9,8 +9,6 @@
 body {
   font-family: 'Manrope', sans-serif;
 }
-
-/* === Hero Section === */
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -140,7 +138,6 @@ nav a:hover {
   display: block;
 }
 
-/* === Category Section === */
 .category-section {
   width: 100%;
   background-color: white;
@@ -194,14 +191,11 @@ nav a:hover {
   color: #000;
   font-weight: 500;
 }
-
 .shop-link span {
   color: #D87D4A;
   font-weight: bold;
   margin-left: 5px;
 }
-
-/* === Responsive (Mobile) === */
 @media screen and (max-width: 767px) {
   nav {
     display: none;
@@ -293,10 +287,9 @@ nav a:hover {
     font-size: 13px;
   }
 }
-
-/* === ALSADEQ Section (Updated) === */
 .alsadeq {
   width: 100%;
+  max-width: 1200px;
   margin: auto;
   min-height: 70vh;
   background-color: #D87D4A;
@@ -354,7 +347,6 @@ nav a:hover {
   background-color: black;
   color: white;
   border: none;
-  border-radius: 8px;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
@@ -429,11 +421,13 @@ padding-bottom: 32px;
     width: 160px;
 height: 48px;
 top: 70px;
+font-size: 15px;
+font-weight: 700;
 left: 1.5px;
 opacity: 1;
-background-color:rgba(128, 128, 128, 0.514);
+background-color:rgba(128, 128, 128, 0.553);
 filter: grayscale(100%);
-/* border: none; */
+
   }
 }
 @media screen and (max-width:767px) {
@@ -444,5 +438,77 @@ filter: grayscale(100%);
       width: 125px;
     }
   }
+  
+}
+.parent-son{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  height: 50vh;
+  background-color:white;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+.parent-son .patman {
+  img{
+    width: 540px;
+    max-width: 97%;
+height: 320px;
+object-fit: cover;
+border-radius: 10px;
+top: 2277px;
+left: 165px;
+opacity: 1;
+
+
+  }
+}
+.parent-son .sbider{
+   width: 540px;
+   max-width: 97%;
+height: 320px;
+border-radius: 10px;
+top: 2277px;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+left: 165px;
+opacity: 1;
+background-color: #f1f1f1;
+h1{
+  font-family: Manrope;
+font-weight: 700;
+font-size: 28px;
+line-height: 100%;
+letter-spacing: 2px;
+text-transform: uppercase;
+padding-bottom: 33px;
+}
+button{
+  width: 160px;
+height: 48px;
+top: 70px;
+left: 1.5px;
+opacity: 1;
+background-color:rgba(128, 128, 128, 0.553);
+font-size: 15px;
+font-weight: 700;
+}
+}
+@media screen and (max-width:767px)  {
+  .parent-son{
+    flex-wrap: wrap;
+    margin: auto;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+    .parent-son .patman {
+     padding-left: 5px;
+    }
+    
   
 }
