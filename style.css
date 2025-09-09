@@ -432,10 +432,13 @@ filter: grayscale(100%);
 }
 @media screen and (max-width:767px) {
   .zezo .rana{
-    right:40%;
-    padding-left: 10px;
+    right:55%;
+    padding-left: 40px;
     button{
       width: 125px;
+    }
+    h1{
+      font-size: 15px;
     }
   }
   
